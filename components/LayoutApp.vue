@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-200">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Revedendor</a>
@@ -26,9 +26,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Entregas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Relatórios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Produtos</a>
@@ -107,7 +104,7 @@
         </div>
       </div>
     </nav>
-    <main class="m-5 bg-gray-500">
+    <main class="m-5">
       <slot></slot>
     </main>
   </div>
