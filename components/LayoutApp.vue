@@ -70,11 +70,11 @@
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Search"
-              aria-label="Search"
+              placeholder="Buscar"
+              aria-label="Buscar"
             />
             <button class="btn btn-outline-success" type="submit">
-              Search
+              Buscar
             </button>
             <div>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -90,12 +90,8 @@
                     Usuário
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Sing Out</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
                   </ul>
                 </li>
               </ul>

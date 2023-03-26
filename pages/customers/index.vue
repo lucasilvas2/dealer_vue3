@@ -56,7 +56,9 @@ export default {
       this.customers = await $.ajax({
         url: "http://localhost:8443/clientes/buscarTodos",
         success: function (res) {
-          this.loadDataTable();
+          $(document).ready(function () {
+            $("#table").DataTable();
+          });
         },
       });
     },
