@@ -2,7 +2,7 @@
   <div class="bg-gray-200">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Revedendor</a>
+        <a class="navbar-brand" href="/">Revedendor</a>
         <button
           class="navbar-toggler"
           type="button"

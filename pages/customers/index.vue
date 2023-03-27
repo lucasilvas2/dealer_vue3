@@ -7,7 +7,12 @@
             <h5 class="card-title mb-5">Clientes</h5>
             <div class="w-auto">
               <a class="btn btn-info" href="/customers/create"
-                ><i class="fa-solid fa-user-plus"></i> Criar cliente</a
+                ><svg-icon
+                  type="mdi"
+                  :path="icon_btnAddCustomer"
+                  class="mx-2"
+                ></svg-icon>
+                Criar cliente</a
               >
             </div>
           </div>
@@ -26,7 +31,15 @@
                   <td>{{ customer.name }}</td>
                   <td>{{ customer.phone }}</td>
                   <td>{{ customer.email }}</td>
-                  <td>{{ customer.address }}</td>
+                  <td>
+                    {{
+                      customer.address != null
+                        ? customer.address.street +
+                          ", " +
+                          customer.address.number
+                        : null
+                    }}
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -38,10 +51,12 @@
 </template>
 
 <script>
+import SvgIcon from "@jamescoyle/vue-icon";
+import { mdiAccountPlus } from "@mdi/js";
 import LayoutApp from "~~/components/LayoutApp.vue";
 import IconMaterial from "~~/components/IconMaterial.vue";
 export default {
-  components: { LayoutApp, IconMaterial },
+  components: { LayoutApp, IconMaterial, SvgIcon },
   created() {
     this.getCustomers();
   },
@@ -49,6 +64,7 @@ export default {
   data() {
     return {
       customers: Object,
+      icon_btnAddCustomer: mdiAccountPlus,
     };
   },
   methods: {

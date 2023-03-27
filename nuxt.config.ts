@@ -24,6 +24,9 @@ export default defineNuxtConfig({
         {
           src: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js",
         },
+        {
+          src: "https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js",
+        },
       ],
       link: [
         // <link rel="stylesheet" href="https://myawesome-lib.css">
@@ -58,5 +61,4 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: [],
 });
