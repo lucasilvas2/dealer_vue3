@@ -24,6 +24,7 @@
                   <th>Número</th>
                   <th>Email</th>
                   <th>Endereço</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -40,6 +41,30 @@
                         : null
                     }}
                   </td>
+                  <td>
+                    <nuxt-link
+                      class="btn btn-success btn-sm"
+                      :to="`/customers/edit/${customer.id}`"
+                    >
+                      <svg-icon
+                        type="mdi"
+                        :path="icon_btnEdit"
+                        class="mx-2"
+                      ></svg-icon
+                      >Editar
+                    </nuxt-link>
+                    <!-- <button
+                      class="btn btn-success btn-sm"
+                      :to="`/customers/edit/${customer.id}`"
+                    >
+                      <svg-icon
+                        type="mdi"
+                        :path="icon_btnEdit"
+                        class="mx-2"
+                      ></svg-icon
+                      >Editar
+                    </button> -->
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -52,7 +77,7 @@
 
 <script>
 import SvgIcon from "@jamescoyle/vue-icon";
-import { mdiAccountPlus } from "@mdi/js";
+import { mdiAccountPlus, mdiPen } from "@mdi/js";
 import LayoutApp from "~~/components/LayoutApp.vue";
 import IconMaterial from "~~/components/IconMaterial.vue";
 export default {
@@ -65,6 +90,7 @@ export default {
     return {
       customers: Object,
       icon_btnAddCustomer: mdiAccountPlus,
+      icon_btnEdit: mdiPen,
     };
   },
   methods: {
@@ -82,6 +108,13 @@ export default {
       $(document).ready(function () {
         $("#table").DataTable();
       });
+    },
+    edit(customer_id) {
+      console.log(customer_id.target.value);
+      let result = this.customers.filter(
+        (customer) => customer_id.target.value == customer.id
+      );
+      console.log("result", result[0]);
     },
   },
   watch: {},
