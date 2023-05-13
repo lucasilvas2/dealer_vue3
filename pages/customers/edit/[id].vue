@@ -9,7 +9,7 @@
           <form
             class="card p-4"
             @submit.prevent="onSubmit"
-            action="http://localhost:8443/clientes/cadastrarComEndereco/1"
+            action="http://localhost:8443/customers/createWithAddress/1"
             method="post"
           >
             <h6 class="my-4 d-flex">
@@ -248,7 +248,7 @@ export default {
       this.submitAddress();
     },
     async submitAddress() {
-      $fetch("http://localhost:8443/enderecos", {
+      $fetch("http://localhost:8443/address", {
         method: "post",
         body: {
           city: this.form.city,
@@ -268,7 +268,7 @@ export default {
         .catch((res) => console.log(res));
     },
     async submitCustomers(id_address) {
-      $fetch(`http://localhost:8443/clientes/cadastrar/1/${id_address}`, {
+      $fetch(`http://localhost:8443/customers/create/1/${id_address}`, {
         method: "post",
         body: {
           email: this.form.email,
@@ -292,7 +292,7 @@ export default {
     },
     async getCustomers() {
       await useFetch(
-        `http://localhost:8443/clientes/buscarPorId/${this.id_customer}`
+        `http://localhost:8443/customers/findById/${this.id_customer}`
       ).then((res) => {
         this.form.city = res.data.value.address.city;
         this.form.country = "Brasil";

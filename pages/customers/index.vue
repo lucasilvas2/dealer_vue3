@@ -96,7 +96,7 @@ export default {
   methods: {
     async getCustomers() {
       this.customers = await $.ajax({
-        url: "http://localhost:8443/clientes/buscarTodos",
+        url: "http://localhost:8443/customers/findAll",
         success: function (res) {
           $(document).ready(function () {
             $("#table").DataTable();
