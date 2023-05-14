@@ -2,7 +2,7 @@
   <div>
     <layout-app>
       <div class="row">
-        <div class="card-body">
+        <div class="card-body shadow p-3 mb-5 bg-body rounded">
           <div class="d-flex justify-content-between">
             <h5 class="card-title mb-5">Clientes</h5>
             <div class="w-auto">
@@ -20,6 +20,7 @@
             <table id="table" class="table table-striped" style="width: 100%">
               <thead>
                 <tr>
+                  <th colspan="1">#</th>
                   <th>Nome</th>
                   <th>Número</th>
                   <th>Email</th>
@@ -29,6 +30,7 @@
               </thead>
               <tbody>
                 <tr v-for="customer in customers" :key="customer.id">
+                  <td>{{ customer.id }}</td>
                   <td>{{ customer.name }}</td>
                   <td>{{ customer.phone }}</td>
                   <td>{{ customer.email }}</td>
@@ -53,17 +55,6 @@
                       ></svg-icon
                       >Editar
                     </nuxt-link>
-                    <!-- <button
-                      class="btn btn-success btn-sm"
-                      :to="`/customers/edit/${customer.id}`"
-                    >
-                      <svg-icon
-                        type="mdi"
-                        :path="icon_btnEdit"
-                        class="mx-2"
-                      ></svg-icon
-                      >Editar
-                    </button> -->
                   </td>
                 </tr>
               </tbody>

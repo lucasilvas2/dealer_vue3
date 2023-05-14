@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200">
+  <div class="" style="background-color: rgb(244 0 255 / 22%)">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">Revedendor</a>

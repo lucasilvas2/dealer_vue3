@@ -27,6 +27,9 @@ export default defineNuxtConfig({
         {
           src: "https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js",
         },
+        {
+          src: "https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js",
+        },
       ],
       link: [
         // <link rel="stylesheet" href="https://myawesome-lib.css">
@@ -53,7 +56,7 @@ export default defineNuxtConfig({
       // please note that this is an area that is likely to change
       style: [
         // <style type="text/css">:root { color: red }</style>
-        //{ children: ':root { color: red }', type: 'text/css' }
+        { children: ":root { background-color: rgb(244 0 255 / 22%) }" },
       ],
       noscript: [
         // <noscript>JavaScript is required</noscript>
