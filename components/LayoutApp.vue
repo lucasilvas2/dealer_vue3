@@ -18,11 +18,13 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/customers"
-                >Clientes</a
-              >
+                >Clientes
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Fornecedor</a>
+              <a class="nav-link" aria-current="page" href="/companies"
+                >Fornecedor
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Entregas</a>
