@@ -10,7 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col h-40 w-40 rounded p-2 bg-gray-300" >
+  <div class="flex flex-col" >
     <div class="flex flex-row">
       <p class= "font-medium">{{ title }}</p>
     </div>
