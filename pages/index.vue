@@ -50,10 +50,10 @@ definePageMeta({
           pulvinar sit amet. Id vel in nam malesuada.
         </p>
       </div>
-      <div class="grid grid-cols-3 gap-4 mb-28">
+      <div class="grid grid-cols-3 gap-4 mb-14">
         <div class="flex flex-row justify-center">
           <div class="flex flex-col items-center">
-            <img class=" mb-3" src="/svg/clock.svg" alt="" />
+            <img class="mb-3" src="/svg/clock.svg" alt="" />
             <h3 class="font-medium text-blue-950 mb-3">Monitoring 24/7</h3>
             <p class="text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipis cing elit.
@@ -63,7 +63,7 @@ definePageMeta({
         </div>
         <div class="flex flex-row justify-center">
           <div class="flex flex-col items-center">
-            <img class=" mb-3" src="/svg/display.svg" alt="" />
+            <img class="mb-3" src="/svg/display.svg" alt="" />
             <h3 class="font-medium text-blue-950 mb-3">Widget System</h3>
             <p class="text-gray-600">
               Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae
@@ -73,7 +73,7 @@ definePageMeta({
         </div>
         <div class="flex flex-row justify-center">
           <div class="flex flex-col items-center">
-            <img class=" mb-3" src="/svg/rocket.svg" alt=""/>
+            <img class="mb-3" src="/svg/rocket.svg" alt="" />
             <h3 class="font-medium text-blue-950 mb-3">Best Performance</h3>
             <p class="text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipis cing elit.
@@ -82,6 +82,85 @@ definePageMeta({
           </div>
         </div>
       </div>
+      <div class="grid grid-cols-2">
+        <div class="flex justify-start items-center h-auto">
+          <div class="w-4/5">
+            <h1
+              class="text-blue-950 font-bold text-3xl text-justify text-wrap mb-4"
+            >
+              Automated Reports & Widget Alerts
+            </h1>
+            <p
+              class="text-gray-500 font-bold text-sm text-justify text-wrap mb-8"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+              vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor
+              pulvinar risus pulvinar sit amet.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-start">
+          <img src="/img/screen-01.png" alt="" />
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="flex justify-end">
+          <img src="/img/screen-02.png" alt="" />
+        </div>
+        <div class="flex justify-center items-center h-auto">
+          <div class="w-4/5">
+            <h1
+              class="text-blue-950 font-bold text-3xl text-justify text-wrap mb-4"
+            >
+              Automated Reports & Widget Alerts
+            </h1>
+            <p
+              class="text-gray-500 font-bold text-sm text-justify text-wrap mb-8"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+              vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor
+              pulvinar risus pulvinar sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="flex justify-start items-center h-auto">
+          <div class="w-4/5">
+            <h1
+              class="text-blue-950 font-bold text-3xl text-justify text-wrap mb-4"
+            >
+              Automated Reports & Widget Alerts
+            </h1>
+            <p
+              class="text-gray-500 font-bold text-sm text-justify text-wrap mb-8"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+              vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor
+              pulvinar risus pulvinar sit amet.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-start">
+          <img src="/img/screen-03.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="bg-no-repeat bg-cover bg-[url('/img/background-bottom.png')] h-screen"
+  >
+    <div class="flex flex-col items-center">
+      <h1 class="text-white font-bold text-3xl text-justify text-wrap mt-60">
+        Pricing Plans
+      </h1>
+      <p class="text-white text-center mt-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
+        aliquet volutpat pellentesque volutpat est.
+      </p>
     </div>
   </div>
 </template>
