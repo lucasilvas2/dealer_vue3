@@ -6,15 +6,15 @@ definePageMeta({
 
 <template>
   <div
-    class="bg-no-repeat bg-cover bg-[url('/img/background-top.png')] h-screen"
+    id="initial" class="bg-no-repeat bg-cover bg-[url('/img/background-top.png')] h-screen"
   >
     <header>
       <Navbar></Navbar>
     </header>
-    <div class="grid grid-cols-2">
+    <div class="flex flex-col-reverse md:grid md:grid-cols-2">
       <div class="flex flex-col justify-center items-center h-auto">
-        <div class="w-2/3">
-          <h1 class="text-white font-bold text-4xl text-justify text-wrap mb-4">
+        <div class="md:w-2/3 p-4">
+          <h1 class="text-white font-bold text-3xl md:text-4xl text-justify text-wrap mb-4">
             Monitor your business on real-time dashboard
           </h1>
           <p
@@ -26,65 +26,72 @@ definePageMeta({
           </p>
           <button
             type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="w-full md:w-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Get started
           </button>
         </div>
       </div>
-      <div class="flex justify-end">
+      <div class="flex md:justify-end">
         <img src="/img/main-screen.png" alt="" />
       </div>
     </div>
   </div>
-  <div class="flex justify-center px-10 py-8">
-    <div class="flex flex-col w-4/5">
+  <div class="flex justify-center px-10 md:py-8">
+    <div id="features" class="flex flex-col md:w-4/5">
       <div class="flex justify-center mb-4">
         <h1 class="text-4xl font-bold text-blue-950 h-auto">Main Features</h1>
       </div>
       <div class="flex mb-14">
-        <p class="text-center">
+        <p class="text-justify md:text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
           nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae
           nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus
           pulvinar sit amet. Id vel in nam malesuada.
         </p>
       </div>
-      <div class="grid grid-cols-3 gap-4 mb-14">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-14">
         <div class="flex flex-row justify-center">
-          <div class="flex flex-col items-center">
-            <img class="mb-3" src="/svg/clock.svg" alt="" />
-            <h3 class="font-medium text-blue-950 mb-3">Monitoring 24/7</h3>
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipis cing elit.
-              Elementum nisi aliquet volutpat.
-            </p>
+          <div class="flex flex-row md:flex-col md:items-center">
+            <img class="mb-3 mr-4 md:mr-0" src="/svg/clock.svg" alt="" />
+            <div>
+              <h3 class="font-medium text-blue-950 mb-3">Monitoring 24/7</h3>
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipis cing elit.
+                Elementum nisi aliquet volutpat.
+              </p>
+            </div>
+            
           </div>
         </div>
         <div class="flex flex-row justify-center">
-          <div class="flex flex-col items-center">
-            <img class="mb-3" src="/svg/display.svg" alt="" />
-            <h3 class="font-medium text-blue-950 mb-3">Widget System</h3>
+          <div class="flex flex-row md:flex-col md:items-center">
+            <img class="mb-3 mr-4 md:mr-0" src="/svg/display.svg" alt="" />
+            <div>
+              <h3 class="font-medium text-blue-950 mb-3">Widget System</h3>
             <p class="text-gray-600">
               Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae
               et, tortor pulvinar risus pulvinar.
             </p>
+            </div>
           </div>
         </div>
         <div class="flex flex-row justify-center">
-          <div class="flex flex-col items-center">
-            <img class="mb-3" src="/svg/rocket.svg" alt="" />
-            <h3 class="font-medium text-blue-950 mb-3">Best Performance</h3>
+          <div class="flex flex-row md:flex-col md:items-center">
+            <img class="mb-3 mr-4 md:mr-0" src="/svg/rocket.svg" alt="" />
+            <div>
+              <h3 class="font-medium text-blue-950 mb-3">Best Performance</h3>
             <p class="text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipis cing elit.
               Elementum nisi aliquet volutpat.
             </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-2">
+      <div class="grid md:grid-cols-2">
         <div class="flex justify-start items-center h-auto">
-          <div class="w-4/5">
+          <div class="md:w-4/5">
             <h1
               class="text-blue-950 font-bold text-3xl text-justify text-wrap mb-4"
             >
@@ -100,20 +107,20 @@ definePageMeta({
             </p>
           </div>
         </div>
-        <div class="flex justify-start">
-          <img src="/img/screen-01.png" alt="" />
+        <div class="flex w-full md:justify-start">
+          <img class="w-full" src="/img/screen-01.png" alt="" />
         </div>
       </div>
-      <div class="grid grid-cols-2">
+      <div class=" flex flex-col-reverse md:grid md:grid-cols-2">
         <div class="flex justify-end">
           <img src="/img/screen-02.png" alt="" />
         </div>
         <div class="flex justify-center items-center h-auto">
-          <div class="w-4/5">
+          <div class="md:w-4/5">
             <h1
               class="text-blue-950 font-bold text-3xl text-justify text-wrap mb-4"
             >
-              Automated Reports & Widget Alerts
+            Fully customizable to address your needs 
             </h1>
             <p
               class="text-gray-500 font-bold text-sm text-justify text-wrap mb-8"
@@ -126,13 +133,13 @@ definePageMeta({
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-2">
+      <div class="grid md:grid-cols-2">
         <div class="flex justify-start items-center h-auto">
-          <div class="w-4/5">
+          <div class="md:w-4/5">
             <h1
               class="text-blue-950 font-bold text-3xl text-justify text-wrap mb-4"
             >
-              Automated Reports & Widget Alerts
+            Pre-built Dashboard Templates 
             </h1>
             <p
               class="text-gray-500 font-bold text-sm text-justify text-wrap mb-8"
@@ -144,7 +151,7 @@ definePageMeta({
             </p>
           </div>
         </div>
-        <div class="flex justify-start">
+        <div class="flex md:justify-start">
           <img src="/img/screen-03.png" alt="" />
         </div>
       </div>
@@ -153,8 +160,8 @@ definePageMeta({
   <div
     class="bg-no-repeat bg-cover bg-[url('/img/background-bottom.png')] h-full"
   >
-    <div class="flex flex-col items-center">
-      <h1 class="text-white font-bold text-3xl text-justify text-wrap mt-60">
+    <div id="prices"  class="flex flex-col items-center mb-32">
+      <h1 class="text-white font-bold text-3xl text-justify text-wrap mt-52">
         Pricing Plans
       </h1>
       <p class="text-white text-center mt-4 mb-10">
@@ -208,6 +215,47 @@ definePageMeta({
           </button>
         </div>
       </div>
+    </div>
+    <div class="flex">
+      <footer
+        class="grid grid-cols-3 gap-6 w-full mx-72 py-8 border-t-[1px] border-[#2A407C]"
+      >
+        <div><img class="h-[30px]" src="/img/logo.png" alt="" srcset="" /></div>
+        <ul
+          class="flex flex-wrap items-center align-middle mb-6 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+        >
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+        <div class="flex justify-evenly align-middle">
+          <img
+            class="w-[10px] h-[20px]"
+            src="/img/Facebook.png"
+            alt=""
+            srcset=""
+          /><img
+            class="w-[20px] h-[20px]"
+            src="/img/Instagram.png"
+            alt=""
+            srcset=""
+          /><img
+            class="w-[20px] h-[20px]"
+            src="/img/Twitter.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </footer>
     </div>
   </div>
 </template>

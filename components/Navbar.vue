@@ -4,7 +4,7 @@
       class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
     >
       <a
-        href="https://flowbite.com/"
+        href="#initial"
         class="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <img
@@ -56,7 +56,7 @@
         >
           <li>
             <a
-              href="#"
+              href="#features"
               class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
               aria-current="page"
               >Produtos</a
@@ -64,21 +64,21 @@
           </li>
           <li>
             <a
-              href="#"
+              href="#prices"
               class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >Preço</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="#faq"
               class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >FAQ</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="#contacts"
               class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >Contatos</a
             >
