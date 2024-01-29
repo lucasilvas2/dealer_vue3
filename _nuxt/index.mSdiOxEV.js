@@ -1,0 +1,1 @@
+import{n as e,o as s,c as t,a as o}from"./entry.tNhsHtcK.js";const a={class:"grow flex justify-center"},n=o("span",{class:"w-auto"},"Page Clients",-1),c=[n],l=e({__name:"index",setup(_){return(r,i)=>(s(),t("div",a,c))}});export{l as default};

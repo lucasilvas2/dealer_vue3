@@ -1,0 +1,1 @@
+import{_ as t,c as o,v as s,o as r}from"./entry.tNhsHtcK.js";const a={},c={class:"flex flex-row justify-between"};function n(e,l){return r(),o("div",c,[s(e.$slots,"default"),s(e.$slots,"default")])}const _=t(a,[["render",n]]);export{_ as default};
