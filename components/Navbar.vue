@@ -1,3 +1,12 @@
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+})
+</script>
 <template>
   <nav class="text-white">
     <div
@@ -8,10 +17,11 @@
         class="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
+          src="/svg/logo.svg"
           class="h-8"
           alt="Flowbite Logo"
         />
+        
         <span
           class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
           >Venda360</span

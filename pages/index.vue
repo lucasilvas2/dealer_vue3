@@ -168,18 +168,17 @@ definePageMeta({
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
         aliquet volutpat pellentesque volutpat est.
       </p>
-      <div class="grid grid-cols-3 gap-7">
+      <div class="flex flex-row md:grid md:grid-cols-3 md:gap-7 md:place-items-center overflow-auto md:overflow-hidden md:focus:scroll-auto w-screen">
         <div
-          class="flex flex-col items-center text-white rounded-lg h-[400px] w-[300px] p-12"
-          style="background-color: #0f1f4b"
+          class="flex flex-col items-center text-white rounded-lg h-[400px] w-[300px] bg-white md:bg-[#0f1f4b] p-12 mx-4"
         >
-          <h4 class="text-2xl font-semibold mb-2">Starter</h4>
+          <h4 class="text-2xl text-[#0f1f4b] md:text-white font-semibold mb-2">Starter</h4>
           <p class="text-gray-500 mb-4">up to 3 users</p>
           <div class="flex w-56 h-[1px] bg-gray-500 mb-4"></div>
-          <h1 class="font-bold text-5xl"><span class="text-xl">$</span>29</h1>
+          <h1 class="font-bold text-5xl text-[#0f1f4b] md:text-white"><span class="text-xl">$</span>29</h1>
           <p class="text-gray-500 mb-14">per month</p>
           <button
-            class="bg-transparent border-solid border-[1px] border-grey-500 rounded-full w-32 p-2"
+            class="bg-[#EF2A82] md:bg-transparent border-solid border-[1px] border-grey-500 rounded-full w-32 p-2"
           >
             Order
           </button>
@@ -200,16 +199,15 @@ definePageMeta({
           </button>
         </div>
         <div
-          class="flex flex-col items-center text-white rounded-lg h-[400px] w-[300px] p-12"
-          style="background-color: #0f1f4b"
+          class="flex flex-col items-center text-white rounded-lg h-[400px] w-[300px] bg-white md:bg-[#0f1f4b] p-12 mx-4"
         >
-          <h4 class="text-2xl font-semibold mb-2">Premiun</h4>
+          <h4 class="text-2xl text-[#0f1f4b] md:text-white font-semibold mb-2">Premiun</h4>
           <p class="text-gray-500 mb-4">up to 200 users</p>
           <div class="flex w-56 h-[1px] bg-gray-500 mb-4"></div>
-          <h1 class="font-bold text-5xl"><span class="text-xl">$</span>299</h1>
+          <h1 class="font-bold text-5xl text-[#0f1f4b] md:text-white"><span class="text-xl">$</span>299</h1>
           <p class="text-gray-500 mb-14">per month</p>
           <button
-            class="bg-transparent border-solid border-[1px] border-grey-500 rounded-full w-32 p-2"
+            class="bg-[#EF2A82] md:bg-transparent border-solid border-[1px] border-grey-500 rounded-full w-32 p-2"
           >
             Order
           </button>
@@ -218,11 +216,11 @@ definePageMeta({
     </div>
     <div class="flex">
       <footer
-        class="grid grid-cols-3 gap-6 w-full mx-72 py-8 border-t-[1px] border-[#2A407C]"
+        class="flex flex-row justify-around md:grid md:grid-cols-3 md:gap-6 w-full md:mx-72 py-8 border-t-[1px] border-[#2A407C] align-middle"
       >
         <div><img class="h-[30px]" src="/img/logo.png" alt="" srcset="" /></div>
         <ul
-          class="flex flex-wrap items-center align-middle mb-6 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          class="hidden md:flex md:flex-wrap items-center align-middle mb-6 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
         >
           <li>
             <a href="#" class="hover:underline me-4 md:me-6">About</a>
@@ -237,7 +235,7 @@ definePageMeta({
             <a href="#" class="hover:underline">Contact</a>
           </li>
         </ul>
-        <div class="flex justify-evenly align-middle">
+        <div class="flex justify-between md:justify-evenly align-middle w-32 items-center">
           <img
             class="w-[10px] h-[20px]"
             src="/img/Facebook.png"
