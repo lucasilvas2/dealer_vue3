@@ -34,7 +34,7 @@ const cards = [
 </script>
 
 <template>
-    <div class="p-4 border-2 rounded-lg">
+    <div class="p-4 rounded-lg">
       <div class="grid grid-cols-3 gap-4 mb-4">
         <div
           class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800"
@@ -53,7 +53,7 @@ const cards = [
         <div
           class="flex items-center justify-center h-50 mb-4 rounded bg-gray-50 dark:bg-gray-800 col-span-2"
         >
-          <!-- <BarChart /> --->
+          <ChartsBarChart/>
         </div>
         <div
           class="flex flex-col justity-center h-50 mb-4 p-4 font-semibold rounded bg-gray-50 dark:bg-gray-800"
@@ -122,13 +122,11 @@ const cards = [
       </div>
     </div>
 </template>
-<!-- 
+
 <script lang="ts">
-import BarChart from "~/components/Charts/BarChart.vue";
 
 export default {
   name: "Dashboard",
-  components: { BarChart },
 };
 </script>
---->
+-

@@ -10,9 +10,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col" >
+  <div class="flex flex-col w-full" >
     <div class="flex flex-row">
-      <p class= "font-medium">{{ title }}</p>
+      <p class= "ml-8 font-medium">{{ title }}</p>
     </div>
     <div class="grid grid-cols-1 h-full content-evenly">
       <div class="grid justify-items-center">

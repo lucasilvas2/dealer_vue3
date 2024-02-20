@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
+    ''
     // '~/node_modules/vue-chartjs'
   ],
   css: [
