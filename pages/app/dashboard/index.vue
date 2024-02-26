@@ -1,7 +1,8 @@
 <script setup lang="ts">
 
 definePageMeta({
-  layout: 'layout-vertical'
+  layout: 'layout-vertical',
+  isAdmin: false
 });
 
 class Card {
@@ -126,7 +127,6 @@ const cards = [
 <script lang="ts">
 
 export default {
-  name: "Dashboard",
+  name: "Dashboard"
 };
 </script>
--

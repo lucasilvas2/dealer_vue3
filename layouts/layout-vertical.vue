@@ -1,8 +1,18 @@
+<script setup lang="ts">
+import { initFlowbite } from "flowbite";
+const route = useRoute()
+
+onMounted(() => {
+  initFlowbite();
+});
+
+const isAdmin = route.meta.isAdmin === true;
+</script>
 
 <template>
   <div id="layout-vertical">
     <aside>
-      <Sidebar></Sidebar>
+      <Sidebar :admin="isAdmin"></Sidebar>
     </aside>
     <main>
       <header class="p-4 sm:ml-64">

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 
 definePageMeta({
-  layout: 'layout-vertical'
+  layout: 'layout-vertical',
+  isAdmin: false
 });
 </script>
 
